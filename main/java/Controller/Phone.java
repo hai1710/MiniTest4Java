@@ -1,5 +1,6 @@
 package Controller;
 
+import module.Contact;
 import module.Type;
 
 public abstract class Phone {
@@ -8,7 +9,9 @@ public abstract class Phone {
     abstract void removePhone(String name);
     abstract void updatePhone(String name, String newPhone);
 
-    public static class Contact {
+    public abstract void insertPhone(module.Contact contact);
+
+    public static class Contact extends module.Contact {
         private String name;
         private String phoneNumber;
         private Type type;

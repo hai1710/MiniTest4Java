@@ -1,5 +1,7 @@
 package Controller;
 
+import module.Contact;
+
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
@@ -54,7 +56,7 @@ public class PhoneBookManage extends Phone implements IPhone {
     }
 
     @Override
-    void display(module.Type type) {
+    public void display(module.Type type) {
 
     }
 
@@ -64,12 +66,17 @@ public class PhoneBookManage extends Phone implements IPhone {
     }
 
     @Override
-    void removePhone(String name) {
+    public void removePhone(String name) {
 
     }
 
     @Override
-    void updatePhone(String name, String newPhone) {
+    public void updatePhone(String name, String newPhone) {
+
+    }
+
+    @Override
+    public void insertPhone(module.Contact contact) {
 
     }
 

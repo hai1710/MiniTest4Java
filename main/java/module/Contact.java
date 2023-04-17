@@ -1,5 +1,4 @@
 package module;
-
 import java.io.Serializable;
 
 public class Contact implements Serializable {
@@ -9,6 +8,7 @@ public class Contact implements Serializable {
 
     public Contact() {
     }
+
     public Contact(String name, String numberPhone) {
         this.name = name;
         this.numberPhone = numberPhone;
@@ -36,7 +36,7 @@ public class Contact implements Serializable {
         this.numberPhone = numberPhone;
     }
 
-    public Type getType(){
+    public Type getType() {
         return type;
     }
 
